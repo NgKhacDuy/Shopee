@@ -65,24 +65,46 @@ html{
     margin: auto;
     position: relative;
     z-index: 1;
-    background-color: var(--white-color);
-    border-radius: 5px;
 }
 
 /* btn style */
 
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
 .btn{
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     text-decoration: none;
     border: none;
     border-radius: 3px;
     background-color: var(--white-color);
     font-size: 1.4rem;
-    padding: 0;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .btn.btn--primary{
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+.btn.btn--size-s{
+    height: 30px;
+    font-size: 12px;
+    padding: 0 8px;
 }
