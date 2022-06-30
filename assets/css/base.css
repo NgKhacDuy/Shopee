@@ -68,3 +68,21 @@ html{
     background-color: var(--white-color);
     border-radius: 5px;
 }
+
+/* btn style */
+
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+.btn.btn--primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
