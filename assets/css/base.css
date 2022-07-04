@@ -72,6 +72,10 @@ html{
     display: flex;
 }
 
+.modal.openSignUpForm{
+    display: flex;
+}
+
 .modal__overlay{
     position: absolute;
     width: 100%;

@@ -105,9 +105,9 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate js-sign-up openSignInForm">Đăng
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate js-sign-up openSignUpForm">Đăng
                             ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <li class="header__navbar-item header__navbar-item--strong js-sign-in openSignInForm">Đăng nhập</li>
                     </ul>
                 </nav>
 
@@ -128,7 +128,22 @@
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
                         </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </div>
 
                     <div class="header__cart">
@@ -200,7 +215,7 @@
             </div>
 
             <!-- login form -->
-            <!-- <div class="auth-form">
+            <!-- <div class="auth-form auth-form-sign-in">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -241,23 +256,11 @@
                         </span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
-    </div> -->
+    </div>
 
-<script>
-    const signInBtn = document.querySelector('.js-sign-up')
-    const modalSignIn = document.querySelector('.modal')
-    const modalSignInClose=document.querySelector('.auth-form__controls-back')
-    function showFormSignIn() {
-        modalSignIn.classList.add('openSignInForm')
-    }
-    function hideFormSignIn() {
-        modalSignIn.classList.remove('openSignInForm')
-    }
-    signInBtn.addEventListener('click', showFormSignIn)
-    modalSignInClose.addEventListener('click',hideFormSignIn)
-</script>
+<script src="./assets/script/script.js"></script>
 
 </body>
 
