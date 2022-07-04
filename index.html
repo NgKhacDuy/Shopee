@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/script/script.js">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -104,7 +105,7 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate">Đăng
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate js-sign-up openSignInForm">Đăng
                             ký</li>
                         <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
                     </ul>
@@ -126,7 +127,7 @@
                         <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <i class="header__search-select-icon fa-solid fa-angle-down"></i>
                         </div>
                     </div>
 
@@ -147,12 +148,12 @@
     </div>
 
     <!-- Modal layout -->
-    <!-- <div class="modal">
+    <div class="modal">
         <div class="modal__overlay"></div>
 
-        <div class="modal__body"> -->
+        <div class="modal__body">
             <!-- register form -->
-            <!-- <div class="auth-form">
+            <div class="auth-form auth-form-sign-up">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -196,7 +197,7 @@
                         </span>
                     </a>
                 </div>
-            </div> -->
+            </div>
 
             <!-- login form -->
             <!-- <div class="auth-form">
@@ -243,6 +244,21 @@
             </div>
         </div>
     </div> -->
+
+<script>
+    const signInBtn = document.querySelector('.js-sign-up')
+    const modalSignIn = document.querySelector('.modal')
+    const modalSignInClose=document.querySelector('.auth-form__controls-back')
+    function showFormSignIn() {
+        modalSignIn.classList.add('openSignInForm')
+    }
+    function hideFormSignIn() {
+        modalSignIn.classList.remove('openSignInForm')
+    }
+    signInBtn.addEventListener('click', showFormSignIn)
+    modalSignInClose.addEventListener('click',hideFormSignIn)
+</script>
+
 </body>
 
 </html>

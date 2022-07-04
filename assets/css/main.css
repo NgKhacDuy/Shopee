@@ -380,6 +380,10 @@
     color: var(--primary-color);
 }
 
+/* .auth-form-sign-up{
+    display: none;
+} */
+
 /* header with search */
 
 .header-with-search{
@@ -426,4 +430,17 @@
     color: var(--text-color);
     padding: 0 16px;
     border-radius: 3px;
+}
+
+.header__search-select{
+    border-left: 1px solid #ccc;
+    padding-left: 16px;
+}
+
+.header__search-select-label{
+
+} 
+
+.header__search-select-icon{
+
 }
